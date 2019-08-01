@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <title>מסך ראשי</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="Styles/reset.css" rel="stylesheet" type="text/css" />-->
+    <link href="Styles/myStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="colors" dir="rtl">
+    <div class="row float-left">
+        <div class="col">
+
+            <a href="userSettings.aspx">
+                <img id="settingsIcon" src="images/settings.png" class="img-fluid" style="width: 40px;" />
+            </a>
+                
+           
+
+         
+
+        </div>
+
+       
+
+    </div>
+    <br /><br /><br />
+
+    <div class="row justify-content-center">
+        <div class="col-3 text-center">
+            <!--<img src="images/user.png" class="rounded-circle img-fluid" />-->
+
+            <div class="imageCircle">
+                <img src="" id="myDashboardUserImage" />
+            </div>
+
+
+            <br />
+            <h3 id="dashboardUserName"></h3>
+            <p id="dashboardStationName"></p>
+            <br />
+
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-2"></div>
+
+        <div class="col-2">
+            <p>המיקום שלי</p>
+        </div>
+
+        <div class="col-2">
+            <p id="dashboardStationPercentile"></p>
+            <p>תחנה</p>
+        </div>
+
+        <div class="col-2">
+            <p id="dashboardDistrictPercentile"></p>
+            <p>מחוז</p>
+        </div>
+
+        <div class="col-2">
+            <p id="dashboardGeneralPercentile"></p>
+            <p>ארצי</p>
+        </div>
+
+        <div class="col-2"></div>
+    </div>
+
+
+    <div class="row justify-content-center" style="background-color:lightgrey">
+        <a class="col-12" href="personalArea.html">
+            <div>
+                <img src="images/edit.png" class="rounded-circle img-fluid" style="display:inline" />
+                <p style="display:inline">אזור אישי</p>
+
+            </div>
+        </a>
+    </div>
+
+
+    <div class="row justify-content-center" style="background-color:lightgrey">
+        <a class="col-12" href="practiceArea.html">
+            <div>
+                <img src="images/edit.png" class="rounded-circle img-fluid" style="display:inline" />
+                <p style="display:inline">תרגול</p>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="row justify-content-center" style="background-color:lightgrey">
+        <a class="col-12" href="#">
+            <div>
+                <img src="images/edit.png" class="rounded-circle img-fluid" style="display:inline" />
+                <p style="display:inline">מה בוער?</p>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="row justify-content-center" style="background-color:lightgrey">
+        <a class="col-12" href="scoreBoard.html">
+            <div>
+                <img src="images/edit.png" class="rounded-circle img-fluid" style="display:inline" />
+                <p style="display:inline">לוח שיאים</p>
+            </div>
+        </a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet' />
+
+    <script>
+        $(document).ready(function () {
+            getUserDetails();
+        });
+    </script>
+</body>
+</html>
